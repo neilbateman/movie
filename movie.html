@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/scripts.js"></script>
+  </head>
+  <body>
+    <div class = "jumbotron">
+      <h1>MOVIE TICKETS</h1>
+      <div class="container">
+        <form>
+          <p>Select your movie!</p>
+          <select class="form-control" id="Movies">
+            <option>Movie 1</option>
+            <option>Movie 2</option>
+          </select>
+          <p>Select your showtime!</p>
+          <div class="radio">
+            <label>
+            <input type="radio" name="time" value="matinee" >
+            Matinee
+            </label>
+            <p></p>
+            <label>
+            <input type="radio" name="time" value="first-release" >
+            First Release
+            </label>
+            <p></p>
+            <label>
+            <input type="radio" name="time" value="evening" >
+            Evening
+            </label>
+          </div>
+          <p>How many ADULT tickets?<p>
+          <input type="number" name="adult-tickets" required>
+          <p>How many CHILD tickets?<p>
+          <input type="number" name="child-tickets" required>
+          <p>How many SENIOR tickets?<p>
+          <input type="number" name="senior-tickets" required>
+          <button type="submit" class="btn">Submit!</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
